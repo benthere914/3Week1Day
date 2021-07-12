@@ -10,7 +10,8 @@ function feedPet(name) {
   debugger;
   const foods = [];
   return (food) => {
-    return "Fed " + name + " " + foods.push(food) + ".";
+    debugger;
+    return "Fed " + name + " " + foods + food + ".";
   }
 }
 
