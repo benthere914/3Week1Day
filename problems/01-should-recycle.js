@@ -12,12 +12,12 @@ return `Recycle Me!`
 
 */
 
-debugger;
+
 function shouldRecycle(item) {
   debugger;
-  if (!item.plastic) {
+  if (item.plastic && item.color !== 'black') {
     return 'Recycle Me!'
-  } else if (item.color === 'black') {
+  } else if (item.plastic && item.color === 'black') {
     return 'Currently, cannot be recycled.'
   } else if (item.aluminum) {
     return 'Recycle Me!'
